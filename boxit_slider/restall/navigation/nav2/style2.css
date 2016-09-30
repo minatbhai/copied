@@ -1,0 +1,31 @@
+
+body { background:url(images/back.jpg); }
+
+div#container {
+    width: 100%;
+	height:100%;
+   /*  border: 1px solid gray; */
+}
+div#container{
+	width:100%;
+	height: 72px;
+}
+#logo{
+	/* margin: 30px;
+	height:50px;
+	max-width: 160px; */
+	width: 0px;
+    height: 72px;
+    float: left;
+}
+#menu {
+	/* float:left;
+    top:30px;
+    margin:0 auto;
+    width:50%; */
+	width: 500px;
+	margin-top:0px;
+    height: 72px;
+    margin-left: 200px;
+}
+}

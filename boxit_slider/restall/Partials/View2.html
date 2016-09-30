@@ -1,0 +1,15 @@
+ 
+<div class="container">
+    <h2>View2</h2>
+    
+    Customer City:<br />
+    <input type="text" data-ng-model="city" />
+    <br />
+    
+    <button data-ng-click="addCustomer()">Add Customer</button>
+    
+    <ul>
+		<li data-ng-repeat="custin customers|filter:city">
+	</ul>
+
+</div>

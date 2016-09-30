@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<title>Title of the document</title>
+<style>
+body{
+	
+	/*background-image: url('img/vintage-flowers.png');*/
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+a:hover{
+	cursor:url(img/cursor3.cur), auto;
+}
+.outerBorder{
+	border: 12px solid white;
+	margin: 13px 4px  20px;
+	border-radius:10px;
+	margin-top: 18px;
+	-webkit-box-shadow: 0px 0px 5px 5px rgba(255,182,193,0.46);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(255,182,193,0.46);
+    box-shadow: 0px 0px 5px 5px rgba(255,182,193,0.46);
+}
+</style>
+</head>
+
+<body>
+<div class = "container-fluid">
+ <div class ="outerBorder" >
+
+   <!-- <nav class="navbar navbar-default">q
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand"href="#">WebSiteName</a>
+    </div>
+    <ul class="nav nav-pills nav-justified">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>  -->
+<div class = row>
+	<div class = "col-md-1 col-sm-1" >
+		<img src="img/logo.png" width="80px" style="margin: 3px 10px;">
+	</div>
+	<div class = "col-md-3" >
+		<h1>Brand</h1>
+	</div>
+	<div class = "col-md-8" >
+	</div>
+</div>
+<!-- <div class="row" bo>
+    <div class="col-md-3">
+      <li><a href="#">Home</a></li>
+    </div>
+    <div class="col-md-3">
+      <li><a href="#">Page 1</a></li>
+    </div>
+    <div class="col-md-3"> 
+      <li><a href="#">Page 2</a></li>
+    </div>
+    <div class="col-md-3">
+      <li><a href="#">Page 3</a></li>
+    </div>
+</div> -->
+
+<nav class="navbar navbar-default" style="background-color: #f2bab9;color:white;border:0;border-radius: 0;">
+  <div style="min-height:8px">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">AboutUs</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">ContactUs</a></li>
+      </ul>
+     
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+ </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+  function setHeight() {
+    windowHeight = $(window).innerHeight()-35;
+    $('.outerBorder').css('min-height', windowHeight);
+  };
+  setHeight();
+  
+  $(window).resize(function() {
+    setHeight();
+  });
+});
+</script>
+</body>
+</html>

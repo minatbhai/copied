@@ -1,0 +1,10 @@
+ table.table{
+	width:700px;
+	margin-top:5px;
+}
+
+table.sub-menu  td{
+	border:1px solid white;
+	font-size:15px;
+	padding:3px;
+} 

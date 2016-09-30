@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+   
+  <style>
+      #div_timer {
+              position: absolute;
+              width: 10px;
+              height: 20px;
+              top: 100%;
+              left: 100%;
+              margin: -100px 0 0 -50px;
+              
+        }
+      a.skip_text{
+		  color:green; 
+		  text-shadow:0.5px 0.5px 0.5px #000; 
+	  }
+      #skip {
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              z-index: 15;
+              top: 108%;
+              left: 100%;
+              margin: -100px 0 0 -50px;
+        }
+     body {
+         background-image: url("img/blur_background.jpg");
+		
+        }   
+  </style>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Box It-Paper Articles</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+    
+<body onload="myFunction()">
+<!--    skip-->
+    <div id="skip">
+        <a class="skip_text" href="http://www.lepapier.com/">SKIP</a>
+    </div>
+    <div id="div_timer"></div>
+  <div id="carousel">
+        <div id="container" tcc-rotation="0" class="blu">
+            <item ><img src="img/39510-gold-tent-favor-boxes-s.jpg"></item>
+            <item ><img src="img/248846_10150199015844592_4523308_n.jpg"></item>
+            <item ><img src="img/252224_10150199024994592_5593311_n.jpg"></item>
+            <item ><img src="img/Decorated-Sweets-Box-.jpg"></item>
+            <item ><img src="img/Double-Door-Sweets-Box.jpg"></item>
+        </div>
+        
+        <nav class="tc-btn-container" style="display:none;">
+            <div class="tc-next">NEXT</div>
+            <div class="tc-prev">PREV</div>
+        </nav>
+        
+    </div>
+    
+    
+    
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/main-parallel.js"></script>
+<!-- <script src="dist/jquery.countdown360.min.js"></script>-->
+<script src="js/jquery.countdown360.js" type="text/javascript" charset="utf-8"></script>
+<script>
+function myFunction() {
+    var timer = setInterval("mytimer()",2000);
+
+    
+  // setTimeout(function(){ window.location="C:/Users/pratik/Desktop/web/navigation/nav2/index.html"; }, 5000);
+    
+}
+function mytimer()
+    {
+		$(".tc-next").trigger('click');
+    }
+
+		 	var countdown =  $("#div_timer").countdown360({
+       	 	radius      : 20,
+         	seconds     : 20,
+         	fontColor   : '#FFFFFF',
+         	autostart   : false,
+         	<!-- onComplete  : function () { window.location="C:/Users/pratik/Desktop/web/navigation/nav2/index.html"; } -->
+		   });
+			countdown.start();
+			console.log('countdown360 ',div_timer);
+		 	
+		  
+</script>  
+    
+    
+</body>
+</html>
